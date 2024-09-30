@@ -1,6 +1,10 @@
 package Sept05;
 
 public class Whale extends Mammal implements Swimmer{
+    public Whale(String name, int age) {
+        super(name, age);
+    }
+
     @Override
     void talk() {
         System.out.println("wwwWWWwwwwwwwwww imma whale");

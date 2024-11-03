@@ -1,10 +1,15 @@
 package Sept30;
 
+import Sept05.Penguin;
+
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Game game = new Game();
+        Peashooter p = new Peashooter(new Coord(3,6));
+        System.out.println(p.attack());
+
         game.addPlant(new Sunflower(new Coord(1,1)));
         game.addPlant(new SunShroom(new Coord(2,4)));
         game.addPlant(new Sunflower(new Coord(5,7)));

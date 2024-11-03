@@ -1,6 +1,6 @@
 package Sept30;
 
-public class Peashooter extends Plant{
+public class Peashooter extends Plant implements Attacker{
     public Peashooter(Coord location) {
         super(100, 2, location);
     }
@@ -14,5 +14,10 @@ public class Peashooter extends Plant{
 
     public int shootPea() {
         return 20;
+    }
+
+    @Override
+    public int getDamage() {
+        return shootPea();
     }
 }

@@ -11,7 +11,7 @@ public class Cat extends Mammal {
     }
 
     @Override
-    void talk() {
+    public void talk() {
         meow();
     }
 

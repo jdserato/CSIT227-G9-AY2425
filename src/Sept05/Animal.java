@@ -1,8 +1,12 @@
 package Sept05;
 
+import java.util.Date;
+
 public abstract class Animal implements Comparable<Animal> {
     protected String name;
     private int age;
+//    final Date birthday;
+
 
     public Animal(String name, int age) {
         this.name = name;
@@ -34,13 +38,7 @@ public abstract class Animal implements Comparable<Animal> {
 
     @Override
     public int compareTo(Animal o) {
-        if (age < o.age) {
-            return -1;
-        } else if (age == o.age) {
-            return 0;
-        } else {
-            return 1;
-        }
+        return Integer.compare(age, o.age);
     }
 
 }

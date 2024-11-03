@@ -6,11 +6,12 @@ public class Penguin extends Bird implements Swimmer  {
     }
 
     @Override
-    void talk() {
+    public void talk() {
         System.out.println("tsk tsk tsk");
     }
 
     public void swim() {
         System.out.println("wooosh ohno a seal");
+//        return 0;
     }
 }
